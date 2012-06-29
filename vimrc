@@ -24,6 +24,9 @@ set smartcase
 :nmap <Leader>w <c-w>s
 :nmap <Leader>e <c-w>v
 
+" add highlighting to mystery files
+:nmap <Leader>h :runtime! syntax/apache.vim<enter>
+
 
 " http://vim.wikia.com/wiki/Pretty-formatting_XML
 function! DoPrettyXML()
