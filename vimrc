@@ -10,7 +10,22 @@ call pathogen#helptags()
 :filetype indent plugin on
 :synta on
 
+" http://items.sjbach.com/319/configuring-vim-right
+set history=1000
+set wildmenu
+let mapleader = ","
+set ignorecase
+set smartcase
 
+" paste last copied item (not deleted)
+:nmap <Leader>v "0p
+
+" split window horizontal/vertical
+:nmap <Leader>w <c-w>s
+:nmap <Leader>e <c-w>v
+
+
+" http://vim.wikia.com/wiki/Pretty-formatting_XML
 function! DoPrettyXML()
   " save the filetype so we can restore it later
   let l:origft = &ft
