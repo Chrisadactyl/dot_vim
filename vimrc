@@ -7,6 +7,7 @@ call pathogen#helptags()
 :set sw=2
 :set tags=/usr/local/webapps/kyle/tags.ctags
 :set nocompatible
+:set hls
 :filetype indent plugin on
 :synta on
 
