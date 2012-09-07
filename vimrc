@@ -13,7 +13,7 @@ call pathogen#helptags()
 " http://items.sjbach.com/319/configuring-vim-right
 set history=1000
 set wildmenu
-let mapleader = ","
+let mapleader = "\\"
 set ignorecase
 set smartcase
 
