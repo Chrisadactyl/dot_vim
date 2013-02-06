@@ -2,12 +2,12 @@
 
 copy and paste the following on your command line
 
-if [ -d ${HOME}/.vim ]; then mv ${HOME}/.vim ${HOME}/.vim-before-git; echo "moving existing .vim to .vim-before-git"; fi; git clone -q git://github.com/kylesloan/dot_vim.git; mv dot_vim .vim; if [ -f ${HOME}/.vimrc ]; then mv ${HOME}/.vimrc ${HOME}/.vimrc-before-git; echo "moving existing .vimrc to .vimrc-before-git"; fi; ln -s ${HOME}/.vim/vimrc ${HOME}/.vimrc; echo 'done'; if [ ! -h ${HOME}/.tmux.conf ]; then ln -s ${HOME}/.vim/tmux.conf .tmux.conf; fi;
+if [ -d ${HOME}/.vim ]; then mv ${HOME}/.vim ${HOME}/.vim-before-git; echo "moving existing .vim to .vim-before-git"; fi; git clone -q git://github.com/kylesloan/dot_vim.git; mv dot_vim .vim; if [ -f ${HOME}/.vimrc ]; then mv ${HOME}/.vimrc ${HOME}/.vimrc-before-git; echo "moving existing .vimrc to .vimrc-before-git"; fi; ln -s ${HOME}/.vim/vimrc ${HOME}/.vimrc; echo 'done'; if [ ! -h ${HOME}/.tmux.conf ]; then ln -s ${HOME}/.vim/tmux.conf ${HOME}/.tmux.conf; fi;
 
 
 to just update tmux settings (you already have the vim repo)
 
-if [ ! -h ${HOME}/.tmux.conf ]; then ln -s ${HOME}/.vim/tmux.conf .tmux.conf; fi;
+if [ ! -h ${HOME}/.tmux.conf ]; then ln -s ${HOME}/.vim/tmux.conf ${HOME}/.tmux.conf; fi;
 
 === Installing a git submodule vim plugin ===
 
