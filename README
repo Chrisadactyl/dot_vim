@@ -23,3 +23,10 @@ git submodule foreach git pull origin master
 
 
 knowledge from - http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/
+
+
+=== Cheat sheets ===
+
+CLI history -- http://www.catonmat.net/download/bash-history-cheat-sheet.txt
+
+
